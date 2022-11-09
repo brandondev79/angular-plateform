@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/vendors/global/vendors.bundle.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~material-design-icons/iconfont/material-icons.css";
+@import "~highlight.js/styles/googlecode.css";
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+// hide bootstrap dropdown arrow globally
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+
+.mat-table__wrapper--dashboard .mat-table {
+    min-width: 600px !important;
+    width: 100% !important;
+}
+
+.position-static {
+    position: static;
+}
+
+
+/*country code styling*/
+input.custom {
+    border: none;
+
+    &:focus,
+    &:hover {
+		outline: none;
+        border: none;
+    }
+}
+
+.intl-tel-input {
+    display: block;
+    border-bottom: 1px solid #eff0f5;
+
+    .selected-flag {
+        padding: 0px 0px 0 0px;
+    }
+}
+
+.btnCus{
+    margin: 16px;
+    &:hover{
+        color: #fff;
+    }
+}
+
+.required-text{
+    margin-top: -10px;
+    display: block;
+    margin-bottom: 10px;
+}
